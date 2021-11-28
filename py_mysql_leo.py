@@ -6,7 +6,6 @@ import pymysql
 from pprint import pprint
 
 
-# conn = pymysql.connect()
 def createDatabase(create_name, show=0, **kwargs):
     """
     创建数据库

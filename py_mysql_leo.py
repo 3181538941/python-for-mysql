@@ -24,10 +24,6 @@ def createDatabase(create_name, show=0, **kwargs):
         'passwd' : "031214",
         'charset': 'utf8'
     }
-    # # 添加字典
-    # for key in kwargs:
-    #     if key not in config:
-    #         config[key] = kwargs[key]
 
     # # 更新字典
     for key in kwargs:
@@ -207,7 +203,6 @@ def databaseExist(database_name):
 #     #     # 获取游标对象
 #     #     cursor = connect.cursor()
 #     #     # 执行SQL命令
-#     #
 #     #     cursor.execute("SHOW DATABASES")
 #     #     all_databases = cursor.fetchall()
 #     #     all_databases = [i[0] for i in all_databases]
